@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0A3065829B5159900652262 /* Insomnia in Frameworks */ = {isa = PBXBuildFile; productRef = A0A3065729B5159900652262 /* Insomnia */; };
 		A0B753B729B0E18100C50F6D /* TomatoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B753B629B0E18100C50F6D /* TomatoroApp.swift */; };
 		A0B753B929B0E18100C50F6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B753B829B0E18100C50F6D /* ContentView.swift */; };
 		A0B753BB29B0E18200C50F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B753BA29B0E18200C50F6D /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A3065829B5159900652262 /* Insomnia in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Tomatoro;
+			packageProductDependencies = (
+				A0A3065729B5159900652262 /* Insomnia */,
+			);
 			productName = Tomatoro;
 			productReference = A0B753B329B0E18100C50F6D /* Tomatoro.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = A0B753AA29B0E18100C50F6D;
+			packageReferences = (
+				A0A3065629B5159900652262 /* XCRemoteSwiftPackageReference "Insomnia" */,
+			);
 			productRefGroup = A0B753B429B0E18100C50F6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0A3065629B5159900652262 /* XCRemoteSwiftPackageReference "Insomnia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ochococo/Insomnia";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0A3065729B5159900652262 /* Insomnia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0A3065629B5159900652262 /* XCRemoteSwiftPackageReference "Insomnia" */;
+			productName = Insomnia;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0B753AB29B0E18100C50F6D /* Project object */;
 }

@@ -1,50 +1,12 @@
 //
-//  ContentView.swift
+//  ContentViewModel.swift
 //  Tomatoro
 //
 //  Created by Łukasz Stachnik on 02/03/2023.
 //
 
-import SwiftUI
-import Insomnia
-
-struct Constants {
-    static let timerLength = 1 * 60
-}
-
-struct ContentView: View {
-
-    private let insomnia = Insomnia(mode: .whenCharging)
-    @StateObject var viewModel = ContentViewModel()
-
-    var body: some View {
-        VStack {
-            Text("🍅")
-                .font(.largeTitle)
-
-            switch viewModel.status {
-            case .notStarted:
-                Button {
-                    viewModel.start()
-                } label: {
-                    Text("Start")
-                }
-            case .inProgress:
-                HStack {
-                    Text("\(viewModel.remainingSeconds / 60):\(String(format: "%02d", viewModel.remainingSeconds % 60))")
-                        .font(.largeTitle)
-                }
-            case .complete:
-                Button {
-                    viewModel.restart()
-                } label: {
-                    Text("Restart")
-                }
-            }
-        }
-        .padding()
-    }
-}
+import Foundation
+import Combine
 
 final class ContentViewModel: ObservableObject {
 
@@ -56,6 +18,7 @@ final class ContentViewModel: ObservableObject {
 
     private var timerCancellable: AnyCancellable?
     private var startDate: Date?
+
     @Published var status: Status = .notStarted
     @Published var remainingSeconds = Constants.timerLength
 
@@ -101,11 +64,5 @@ final class ContentViewModel: ObservableObject {
                     self.start()
                 }
             })
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
