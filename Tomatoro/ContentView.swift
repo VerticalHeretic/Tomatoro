@@ -53,9 +53,9 @@ final class ContentViewModel: ObservableObject {
         case complete
     }
 
-    var timerCancellable: AnyCancellable?
+    private var timerCancellable: AnyCancellable?
+    private var startDate: Date?
     @Published var status: Status = .notStarted
-    @Published var startDate: Date?
     @Published var remainingSeconds = Constants.timerLength
 
     func start() {
@@ -67,6 +67,7 @@ final class ContentViewModel: ObservableObject {
 
     func complete() {
         status = .complete
+		timerCancellable?.cancel()
     }
 
     func restart() {
@@ -92,6 +93,7 @@ final class ContentViewModel: ObservableObject {
                         self.remainingSeconds = remainingTime
                         if remainingTime == 0 {
                             self.status = .complete
+                            self.timerCancellable?.cancel()
                         }
                     }
                 } else if self.status == .notStarted {
