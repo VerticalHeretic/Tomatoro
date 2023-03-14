@@ -67,7 +67,7 @@ final class ContentViewModel: ObservableObject {
 
     func complete() {
         status = .complete
-		timerCancellable?.cancel()
+        timerCancellable?.cancel()
     }
 
     func restart() {
