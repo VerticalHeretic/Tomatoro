@@ -9,23 +9,36 @@
 /* Begin PBXBuildFile section */
 		A0A3065829B5159900652262 /* Insomnia in Frameworks */ = {isa = PBXBuildFile; productRef = A0A3065729B5159900652262 /* Insomnia */; };
 		A0B753B729B0E18100C50F6D /* TomatoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B753B629B0E18100C50F6D /* TomatoroApp.swift */; };
-		A0B753B929B0E18100C50F6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B753B829B0E18100C50F6D /* ContentView.swift */; };
+		A0B753B929B0E18100C50F6D /* PomodoroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B753B829B0E18100C50F6D /* PomodoroView.swift */; };
 		A0B753BB29B0E18200C50F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B753BA29B0E18200C50F6D /* Assets.xcassets */; };
 		A0B753BE29B0E18200C50F6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B753BD29B0E18200C50F6D /* Preview Assets.xcassets */; };
-		A0D57F2729C0ACBA00908EEE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F2629C0ACBA00908EEE /* ContentViewModel.swift */; };
+		A0D57F2729C0ACBA00908EEE /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F2629C0ACBA00908EEE /* PomodoroViewModel.swift */; };
 		A0D57F2929C0ACCA00908EEE /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F2829C0ACCA00908EEE /* ClockView.swift */; };
 		A0D57F2B29C0AD0A00908EEE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F2A29C0AD0A00908EEE /* Constants.swift */; };
+		A0D57F3A29C0AF8900908EEE /* PomodoroViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F3929C0AF8900908EEE /* PomodoroViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0D57F3429C0AE5700908EEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B753AB29B0E18100C50F6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0B753B229B0E18100C50F6D;
+			remoteInfo = Tomatoro;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A0B753B329B0E18100C50F6D /* Tomatoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomatoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B753B629B0E18100C50F6D /* TomatoroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoroApp.swift; sourceTree = "<group>"; };
-		A0B753B829B0E18100C50F6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0B753B829B0E18100C50F6D /* PomodoroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroView.swift; sourceTree = "<group>"; };
 		A0B753BA29B0E18200C50F6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0B753BD29B0E18200C50F6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A0D57F2629C0ACBA00908EEE /* ContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		A0D57F2629C0ACBA00908EEE /* PomodoroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
 		A0D57F2829C0ACCA00908EEE /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		A0D57F2A29C0AD0A00908EEE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0D57F3029C0AE5600908EEE /* TomatoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D57F3929C0AF8900908EEE /* PomodoroViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +50,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0D57F2D29C0AE5600908EEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				A0B753B529B0E18100C50F6D /* Tomatoro */,
+				A0D57F3129C0AE5700908EEE /* TomatoroTests */,
 				A0B753B429B0E18100C50F6D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				A0B753B329B0E18100C50F6D /* Tomatoro.app */,
+				A0D57F3029C0AE5600908EEE /* TomatoroTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,8 +84,8 @@
 				A0B753B629B0E18100C50F6D /* TomatoroApp.swift */,
 				A0D57F2A29C0AD0A00908EEE /* Constants.swift */,
 				A0D57F2829C0ACCA00908EEE /* ClockView.swift */,
-				A0D57F2629C0ACBA00908EEE /* ContentViewModel.swift */,
-				A0B753B829B0E18100C50F6D /* ContentView.swift */,
+				A0D57F2629C0ACBA00908EEE /* PomodoroViewModel.swift */,
+				A0B753B829B0E18100C50F6D /* PomodoroView.swift */,
 				A0B753BA29B0E18200C50F6D /* Assets.xcassets */,
 				A0B753BC29B0E18200C50F6D /* Preview Content */,
 			);
@@ -76,6 +98,14 @@
 				A0B753BD29B0E18200C50F6D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0D57F3129C0AE5700908EEE /* TomatoroTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0D57F3929C0AF8900908EEE /* PomodoroViewModelTests.swift */,
+			);
+			path = TomatoroTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +131,24 @@
 			productReference = A0B753B329B0E18100C50F6D /* Tomatoro.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A0D57F2F29C0AE5600908EEE /* TomatoroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0D57F3629C0AE5700908EEE /* Build configuration list for PBXNativeTarget "TomatoroTests" */;
+			buildPhases = (
+				A0D57F2C29C0AE5600908EEE /* Sources */,
+				A0D57F2D29C0AE5600908EEE /* Frameworks */,
+				A0D57F2E29C0AE5600908EEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0D57F3529C0AE5700908EEE /* PBXTargetDependency */,
+			);
+			name = TomatoroTests;
+			productName = TomatoroTests;
+			productReference = A0D57F3029C0AE5600908EEE /* TomatoroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -113,6 +161,10 @@
 				TargetAttributes = {
 					A0B753B229B0E18100C50F6D = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					A0D57F2F29C0AE5600908EEE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A0B753B229B0E18100C50F6D;
 					};
 				};
 			};
@@ -133,6 +185,7 @@
 			projectRoot = "";
 			targets = (
 				A0B753B229B0E18100C50F6D /* Tomatoro */,
+				A0D57F2F29C0AE5600908EEE /* TomatoroTests */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +200,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0D57F2E29C0AE5600908EEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -155,14 +215,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D57F2B29C0AD0A00908EEE /* Constants.swift in Sources */,
-				A0B753B929B0E18100C50F6D /* ContentView.swift in Sources */,
+				A0B753B929B0E18100C50F6D /* PomodoroView.swift in Sources */,
 				A0D57F2929C0ACCA00908EEE /* ClockView.swift in Sources */,
 				A0B753B729B0E18100C50F6D /* TomatoroApp.swift in Sources */,
-				A0D57F2729C0ACBA00908EEE /* ContentViewModel.swift in Sources */,
+				A0D57F2729C0ACBA00908EEE /* PomodoroViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D57F2C29C0AE5600908EEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D57F3A29C0AF8900908EEE /* PomodoroViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0D57F3529C0AE5700908EEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0B753B229B0E18100C50F6D /* Tomatoro */;
+			targetProxy = A0D57F3429C0AE5700908EEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A0B753BF29B0E18200C50F6D /* Debug */ = {
@@ -337,6 +413,50 @@
 			};
 			name = Release;
 		};
+		A0D57F3729C0AE5700908EEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7KN966P9LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verticalcoding.TomatoroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tomatoro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tomatoro";
+			};
+			name = Debug;
+		};
+		A0D57F3829C0AE5700908EEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7KN966P9LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verticalcoding.TomatoroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tomatoro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tomatoro";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -354,6 +474,15 @@
 			buildConfigurations = (
 				A0B753C229B0E18200C50F6D /* Debug */,
 				A0B753C329B0E18200C50F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0D57F3629C0AE5700908EEE /* Build configuration list for PBXNativeTarget "TomatoroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D57F3729C0AE5700908EEE /* Debug */,
+				A0D57F3829C0AE5700908EEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

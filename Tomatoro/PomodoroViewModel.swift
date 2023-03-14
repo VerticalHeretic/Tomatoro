@@ -8,21 +8,32 @@
 import Foundation
 import Combine
 
-final class ContentViewModel: ObservableObject {
+enum PomodoroStatus {
+    case notStarted
+    case inProgress
+    case complete
+}
 
-    enum Status {
-        case notStarted
-        case inProgress
-        case complete
-    }
+protocol PomodoroViewModel: AnyObject {
+    var status: PomodoroStatus { get set }
+    var remainingSeconds: Int { get set }
+
+    func start()
+    func complete()
+    func restart()
+}
+
+final class PomodoroViewModelImpl: PomodoroViewModel, ObservableObject {
 
     private var timerCancellable: AnyCancellable?
     private var startDate: Date?
 
-    @Published var status: Status = .notStarted
+    @Published var status: PomodoroStatus = .notStarted
     @Published var remainingSeconds = Constants.timerLength
 
     func start() {
+        guard status == .notStarted else { return }
+
         status = .inProgress
         startDate = Date()
 
@@ -30,11 +41,15 @@ final class ContentViewModel: ObservableObject {
     }
 
     func complete() {
+        guard status == .inProgress else { return }
+
         status = .complete
         timerCancellable?.cancel()
     }
 
     func restart() {
+        guard status == .complete else { return }
+
         status = .inProgress
         startDate = Calendar.current.date(byAdding: .second, value: 1, to: Date())
         startTimer()
@@ -43,17 +58,12 @@ final class ContentViewModel: ObservableObject {
     private func startTimer() {
         timerCancellable = Timer
             .publish(every: 1,
-                     on: .current,
+                     on: .main,
                      in: .common)
             .autoconnect()
-            .receive(on: DispatchQueue.main)
             .sink(receiveValue: { [weak self] _ in
-                guard let self = self else { return }
-
-                if self.status == .inProgress {
-                    self.elapseTime()
-                } else if self.status == .notStarted {
-                    self.start()
+                if self?.status == .inProgress {
+                    self?.elapseTime()
                 }
             })
     }

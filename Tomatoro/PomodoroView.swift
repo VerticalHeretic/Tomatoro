@@ -8,10 +8,10 @@
 import SwiftUI
 import Insomnia
 
-struct ContentView: View {
+struct PomodoroView: View {
 
     private let insomnia = Insomnia(mode: .whenCharging)
-    @StateObject var viewModel = ContentViewModel()
+    @StateObject var viewModel = PomodoroViewModelImpl()
 
     var body: some View {
         VStack {
@@ -27,18 +27,26 @@ struct ContentView: View {
                 } label: {
                     Text("Start")
                 }
+                .buttonStyle(.borderedProminent)
+                .tint(.blue)
+
             case .inProgress:
                 Button {
                     viewModel.complete()
                 } label: {
                     Text("Complete")
                 }
+                .buttonStyle(.borderedProminent)
+                .tint(.green)
+
             case .complete:
                 Button {
                     viewModel.restart()
                 } label: {
                     Text("Restart")
                 }
+                .buttonStyle(.borderedProminent)
+                .tint(.red)
             }
         }
         .padding()
@@ -47,6 +55,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        PomodoroView()
     }
 }
