@@ -36,7 +36,7 @@ final class ContentViewModel: ObservableObject {
 
     func restart() {
         status = .inProgress
-        startDate = Date()
+        startDate = Calendar.current.date(byAdding: .second, value: 1, to: Date())
         startTimer()
     }
 
@@ -51,18 +51,22 @@ final class ContentViewModel: ObservableObject {
                 guard let self = self else { return }
 
                 if self.status == .inProgress {
-                    if let startDate = self.startDate {
-                        let elapsedTime = Date().timeIntervalSince(startDate)
-                        let remainingTime = max(0, Constants.timerLength - Int(elapsedTime))
-                        self.remainingSeconds = remainingTime
-                        if remainingTime == 0 {
-                            self.status = .complete
-                            self.timerCancellable?.cancel()
-                        }
-                    }
+                    self.elapseTime()
                 } else if self.status == .notStarted {
                     self.start()
                 }
             })
+    }
+
+    private func elapseTime() {
+        if let startDate = self.startDate {
+            let elapsedTime = Date().timeIntervalSince(startDate)
+            let remainingTime = max(0, Constants.timerLength - Int(elapsedTime))
+            self.remainingSeconds = remainingTime
+            if remainingTime == 0 {
+                self.status = .complete
+                self.timerCancellable?.cancel()
+            }
+        }
     }
 }
