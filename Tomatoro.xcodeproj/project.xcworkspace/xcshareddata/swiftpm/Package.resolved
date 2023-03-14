@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "insomnia",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ochococo/Insomnia",
+      "state" : {
+        "revision" : "212e3d1e8d49248796e436679b60ee1dfda622ce",
+        "version" : "2.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}
