@@ -11,4 +11,5 @@ import SwiftUI
 extension Color {
     static let restart = Color("Restart")
     static let complete = Color("Complete")
+    static let clockBackground = Color("Clock")
 }
