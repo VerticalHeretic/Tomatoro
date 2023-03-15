@@ -50,6 +50,17 @@
                ReferencedContainer = "container:Tomatoro.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A0D57F4A29C1CD5900908EEE"
+               BuildableName = "TomatoroUITests.xctest"
+               BlueprintName = "TomatoroUITests"
+               ReferencedContainer = "container:Tomatoro.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

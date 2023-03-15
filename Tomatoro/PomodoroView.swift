@@ -14,9 +14,9 @@ struct PomodoroView: View {
     @StateObject var viewModel = PomodoroViewModelImpl()
 
     var body: some View {
-        VStack {
-            Text("🍅")
-                .font(.largeTitle)
+        VStack(spacing: 20) {
+            TomatoView(status: $viewModel.status)
+                .frame(width: 200, height: 200)
 
             ClockView(remainingSeconds: $viewModel.remainingSeconds)
 
@@ -37,7 +37,7 @@ struct PomodoroView: View {
                     Text("Complete")
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(.green)
+                .tint(.complete)
 
             case .complete:
                 Button {
@@ -46,10 +46,10 @@ struct PomodoroView: View {
                     Text("Restart")
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(.red)
+                .tint(.restart)
             }
         }
-        .padding()
+        .animation(.easeInOut, value: viewModel.status)
     }
 }
 

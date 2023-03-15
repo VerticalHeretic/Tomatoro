@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A09BFDD929C1D88600AFB1C9 /* Color+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09BFDD829C1D88600AFB1C9 /* Color+Assets.swift */; };
 		A0A3065829B5159900652262 /* Insomnia in Frameworks */ = {isa = PBXBuildFile; productRef = A0A3065729B5159900652262 /* Insomnia */; };
 		A0B753B729B0E18100C50F6D /* TomatoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B753B629B0E18100C50F6D /* TomatoroApp.swift */; };
 		A0B753B929B0E18100C50F6D /* PomodoroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B753B829B0E18100C50F6D /* PomodoroView.swift */; };
@@ -16,6 +17,13 @@
 		A0D57F2929C0ACCA00908EEE /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F2829C0ACCA00908EEE /* ClockView.swift */; };
 		A0D57F2B29C0AD0A00908EEE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F2A29C0AD0A00908EEE /* Constants.swift */; };
 		A0D57F3A29C0AF8900908EEE /* PomodoroViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F3929C0AF8900908EEE /* PomodoroViewModelTests.swift */; };
+		A0D57F4329C1CC0200908EEE /* Pomodor-InProgress.json in Resources */ = {isa = PBXBuildFile; fileRef = A0D57F4129C1CC0100908EEE /* Pomodor-InProgress.json */; };
+		A0D57F4429C1CC0200908EEE /* Pomodor-Complete.json in Resources */ = {isa = PBXBuildFile; fileRef = A0D57F4229C1CC0200908EEE /* Pomodor-Complete.json */; };
+		A0D57F4E29C1CD5900908EEE /* TomatoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F4D29C1CD5900908EEE /* TomatoroUITests.swift */; };
+		A0D57F5029C1CD5900908EEE /* TomatoroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F4F29C1CD5900908EEE /* TomatoroUITestsLaunchTests.swift */; };
+		A0D57F5829C1CFBD00908EEE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A0D57F5729C1CFBD00908EEE /* Lottie */; };
+		A0D57F5B29C1CFD400908EEE /* TomatoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F5A29C1CFD400908EEE /* TomatoView.swift */; };
+		A0D57F5E29C1D06F00908EEE /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D57F5D29C1D06F00908EEE /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +34,17 @@
 			remoteGlobalIDString = A0B753B229B0E18100C50F6D;
 			remoteInfo = Tomatoro;
 		};
+		A0D57F5129C1CD5900908EEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B753AB29B0E18100C50F6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0B753B229B0E18100C50F6D;
+			remoteInfo = Tomatoro;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A09BFDD829C1D88600AFB1C9 /* Color+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Assets.swift"; sourceTree = "<group>"; };
 		A0B753B329B0E18100C50F6D /* Tomatoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomatoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B753B629B0E18100C50F6D /* TomatoroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoroApp.swift; sourceTree = "<group>"; };
 		A0B753B829B0E18100C50F6D /* PomodoroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroView.swift; sourceTree = "<group>"; };
@@ -39,6 +55,13 @@
 		A0D57F2A29C0AD0A00908EEE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A0D57F3029C0AE5600908EEE /* TomatoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D57F3929C0AF8900908EEE /* PomodoroViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModelTests.swift; sourceTree = "<group>"; };
+		A0D57F4129C1CC0100908EEE /* Pomodor-InProgress.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Pomodor-InProgress.json"; sourceTree = "<group>"; };
+		A0D57F4229C1CC0200908EEE /* Pomodor-Complete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Pomodor-Complete.json"; sourceTree = "<group>"; };
+		A0D57F4B29C1CD5900908EEE /* TomatoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatoroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D57F4D29C1CD5900908EEE /* TomatoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoroUITests.swift; sourceTree = "<group>"; };
+		A0D57F4F29C1CD5900908EEE /* TomatoroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0D57F5A29C1CFD400908EEE /* TomatoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoView.swift; sourceTree = "<group>"; };
+		A0D57F5D29C1D06F00908EEE /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0A3065829B5159900652262 /* Insomnia in Frameworks */,
+				A0D57F5829C1CFBD00908EEE /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,14 +81,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0D57F4829C1CD5900908EEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A09BFDD629C1D84F00AFB1C9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0D57F2A29C0AD0A00908EEE /* Constants.swift */,
+				A09BFDD829C1D88600AFB1C9 /* Color+Assets.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A09BFDD729C1D86200AFB1C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0B753BC29B0E18200C50F6D /* Preview Content */,
+				A0D57F4029C1CBEE00908EEE /* Animations */,
+				A0B753BA29B0E18200C50F6D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A0B753AA29B0E18100C50F6D = {
 			isa = PBXGroup;
 			children = (
 				A0B753B529B0E18100C50F6D /* Tomatoro */,
 				A0D57F3129C0AE5700908EEE /* TomatoroTests */,
+				A0D57F4C29C1CD5900908EEE /* TomatoroUITests */,
 				A0B753B429B0E18100C50F6D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +125,7 @@
 			children = (
 				A0B753B329B0E18100C50F6D /* Tomatoro.app */,
 				A0D57F3029C0AE5600908EEE /* TomatoroTests.xctest */,
+				A0D57F4B29C1CD5900908EEE /* TomatoroUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,13 +133,13 @@
 		A0B753B529B0E18100C50F6D /* Tomatoro */ = {
 			isa = PBXGroup;
 			children = (
-				A0B753B629B0E18100C50F6D /* TomatoroApp.swift */,
-				A0D57F2A29C0AD0A00908EEE /* Constants.swift */,
-				A0D57F2829C0ACCA00908EEE /* ClockView.swift */,
+				A09BFDD729C1D86200AFB1C9 /* Resources */,
+				A09BFDD629C1D84F00AFB1C9 /* Utils */,
+				A0D57F5C29C1D06600908EEE /* SharedUI */,
+				A0D57F5929C1CFC400908EEE /* Views */,
 				A0D57F2629C0ACBA00908EEE /* PomodoroViewModel.swift */,
 				A0B753B829B0E18100C50F6D /* PomodoroView.swift */,
-				A0B753BA29B0E18200C50F6D /* Assets.xcassets */,
-				A0B753BC29B0E18200C50F6D /* Preview Content */,
+				A0B753B629B0E18100C50F6D /* TomatoroApp.swift */,
 			);
 			path = Tomatoro;
 			sourceTree = "<group>";
@@ -108,6 +160,41 @@
 			path = TomatoroTests;
 			sourceTree = "<group>";
 		};
+		A0D57F4029C1CBEE00908EEE /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A0D57F4229C1CC0200908EEE /* Pomodor-Complete.json */,
+				A0D57F4129C1CC0100908EEE /* Pomodor-InProgress.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		A0D57F4C29C1CD5900908EEE /* TomatoroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0D57F4D29C1CD5900908EEE /* TomatoroUITests.swift */,
+				A0D57F4F29C1CD5900908EEE /* TomatoroUITestsLaunchTests.swift */,
+			);
+			path = TomatoroUITests;
+			sourceTree = "<group>";
+		};
+		A0D57F5929C1CFC400908EEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0D57F2829C0ACCA00908EEE /* ClockView.swift */,
+				A0D57F5A29C1CFD400908EEE /* TomatoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0D57F5C29C1D06600908EEE /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				A0D57F5D29C1D06F00908EEE /* LottieView.swift */,
+			);
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +213,7 @@
 			name = Tomatoro;
 			packageProductDependencies = (
 				A0A3065729B5159900652262 /* Insomnia */,
+				A0D57F5729C1CFBD00908EEE /* Lottie */,
 			);
 			productName = Tomatoro;
 			productReference = A0B753B329B0E18100C50F6D /* Tomatoro.app */;
@@ -149,6 +237,24 @@
 			productReference = A0D57F3029C0AE5600908EEE /* TomatoroTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A0D57F4A29C1CD5900908EEE /* TomatoroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0D57F5329C1CD5900908EEE /* Build configuration list for PBXNativeTarget "TomatoroUITests" */;
+			buildPhases = (
+				A0D57F4729C1CD5900908EEE /* Sources */,
+				A0D57F4829C1CD5900908EEE /* Frameworks */,
+				A0D57F4929C1CD5900908EEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0D57F5229C1CD5900908EEE /* PBXTargetDependency */,
+			);
+			name = TomatoroUITests;
+			productName = TomatoroUITests;
+			productReference = A0D57F4B29C1CD5900908EEE /* TomatoroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +272,10 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = A0B753B229B0E18100C50F6D;
 					};
+					A0D57F4A29C1CD5900908EEE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A0B753B229B0E18100C50F6D;
+					};
 				};
 			};
 			buildConfigurationList = A0B753AE29B0E18100C50F6D /* Build configuration list for PBXProject "Tomatoro" */;
@@ -179,6 +289,7 @@
 			mainGroup = A0B753AA29B0E18100C50F6D;
 			packageReferences = (
 				A0A3065629B5159900652262 /* XCRemoteSwiftPackageReference "Insomnia" */,
+				A0D57F5629C1CFBD00908EEE /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = A0B753B429B0E18100C50F6D /* Products */;
 			projectDirPath = "";
@@ -186,6 +297,7 @@
 			targets = (
 				A0B753B229B0E18100C50F6D /* Tomatoro */,
 				A0D57F2F29C0AE5600908EEE /* TomatoroTests */,
+				A0D57F4A29C1CD5900908EEE /* TomatoroUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -196,11 +308,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B753BE29B0E18200C50F6D /* Preview Assets.xcassets in Resources */,
+				A0D57F4329C1CC0200908EEE /* Pomodor-InProgress.json in Resources */,
 				A0B753BB29B0E18200C50F6D /* Assets.xcassets in Resources */,
+				A0D57F4429C1CC0200908EEE /* Pomodor-Complete.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A0D57F2E29C0AE5600908EEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D57F4929C1CD5900908EEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,6 +339,9 @@
 				A0B753B929B0E18100C50F6D /* PomodoroView.swift in Sources */,
 				A0D57F2929C0ACCA00908EEE /* ClockView.swift in Sources */,
 				A0B753B729B0E18100C50F6D /* TomatoroApp.swift in Sources */,
+				A0D57F5E29C1D06F00908EEE /* LottieView.swift in Sources */,
+				A0D57F5B29C1CFD400908EEE /* TomatoView.swift in Sources */,
+				A09BFDD929C1D88600AFB1C9 /* Color+Assets.swift in Sources */,
 				A0D57F2729C0ACBA00908EEE /* PomodoroViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +354,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0D57F4729C1CD5900908EEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D57F5029C1CD5900908EEE /* TomatoroUITestsLaunchTests.swift in Sources */,
+				A0D57F4E29C1CD5900908EEE /* TomatoroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -237,6 +370,11 @@
 			isa = PBXTargetDependency;
 			target = A0B753B229B0E18100C50F6D /* Tomatoro */;
 			targetProxy = A0D57F3429C0AE5700908EEE /* PBXContainerItemProxy */;
+		};
+		A0D57F5229C1CD5900908EEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0B753B229B0E18100C50F6D /* Tomatoro */;
+			targetProxy = A0D57F5129C1CD5900908EEE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -362,7 +500,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Tomatoro/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Tomatoro/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 7KN966P9LP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -391,7 +529,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Tomatoro/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Tomatoro/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 7KN966P9LP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -457,6 +595,40 @@
 			};
 			name = Release;
 		};
+		A0D57F5429C1CD5900908EEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7KN966P9LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verticalcoding.TomatoroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tomatoro;
+			};
+			name = Debug;
+		};
+		A0D57F5529C1CD5900908EEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7KN966P9LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verticalcoding.TomatoroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tomatoro;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +659,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A0D57F5329C1CD5900908EEE /* Build configuration list for PBXNativeTarget "TomatoroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D57F5429C1CD5900908EEE /* Debug */,
+				A0D57F5529C1CD5900908EEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -498,6 +679,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		A0D57F5629C1CFBD00908EEE /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -505,6 +694,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A0A3065629B5159900652262 /* XCRemoteSwiftPackageReference "Insomnia" */;
 			productName = Insomnia;
+		};
+		A0D57F5729C1CFBD00908EEE /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0D57F5629C1CFBD00908EEE /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
