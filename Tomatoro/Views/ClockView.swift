@@ -17,14 +17,14 @@ struct ClockView: View {
                 .font(.system(size: 72))
                 .foregroundColor(.primary)
                 .padding(10)
-                .background(.secondary)
+                .background(Color.clockBackground)
                 .cornerRadius(10)
             Text("\(String(format: "%02d", remainingSeconds % 60))")
                 .fontDesign(.monospaced)
                 .font(.system(size: 72))
                 .foregroundColor(.primary)
                 .padding(10)
-                .background(.secondary)
+                .background(Color.clockBackground)
                 .cornerRadius(10)
         }
     }
