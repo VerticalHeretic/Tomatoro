@@ -15,12 +15,13 @@ struct TomatoView: View {
         switch status {
         case .notStarted:
             Image("Tomato")
+                .accessibilityIdentifier("notStarted_image")
         case .inProgress:
-            LottieView(lottieFile: "Pomodor-InProgress",
-                       loopMode: .autoReverse)
+            LottieView(lottieFile: "Pomodor-InProgress", loopMode: .autoReverse)
+                .accessibilityIdentifier("inProgress_lottie_view")
         case .complete:
-            LottieView(lottieFile: "Pomodor-Complete",
-                       loopMode: .playOnce)
+            LottieView(lottieFile: "Pomodor-Complete", loopMode: .playOnce)
+                .accessibilityIdentifier("complete_lottie_view")
         }
 
     }
