@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A072B62229D2AF50008E2CEC /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = A072B62129D2AF50008E2CEC /* Inject */; };
+		A072B62529D2B26D008E2CEC /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072B62429D2B26D008E2CEC /* Inject.swift */; };
 		A09BFDD929C1D88600AFB1C9 /* Color+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09BFDD829C1D88600AFB1C9 /* Color+Assets.swift */; };
 		A0A3065829B5159900652262 /* Insomnia in Frameworks */ = {isa = PBXBuildFile; productRef = A0A3065729B5159900652262 /* Insomnia */; };
 		A0B753B729B0E18100C50F6D /* TomatoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B753B629B0E18100C50F6D /* TomatoroApp.swift */; };
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A072B62429D2B26D008E2CEC /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		A09BFDD829C1D88600AFB1C9 /* Color+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Assets.swift"; sourceTree = "<group>"; };
 		A0B753B329B0E18100C50F6D /* Tomatoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomatoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B753B629B0E18100C50F6D /* TomatoroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoroApp.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 			files = (
 				A0A3065829B5159900652262 /* Insomnia in Frameworks */,
 				A0D57F5829C1CFBD00908EEE /* Lottie in Frameworks */,
+				A072B62229D2AF50008E2CEC /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A072B62329D2B260008E2CEC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A072B62429D2B26D008E2CEC /* Inject.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A09BFDD629C1D84F00AFB1C9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 		A0B753B529B0E18100C50F6D /* Tomatoro */ = {
 			isa = PBXGroup;
 			children = (
+				A072B62329D2B260008E2CEC /* Extensions */,
 				A09BFDD729C1D86200AFB1C9 /* Resources */,
 				A09BFDD629C1D84F00AFB1C9 /* Utils */,
 				A0D57F5C29C1D06600908EEE /* SharedUI */,
@@ -214,6 +227,7 @@
 			packageProductDependencies = (
 				A0A3065729B5159900652262 /* Insomnia */,
 				A0D57F5729C1CFBD00908EEE /* Lottie */,
+				A072B62129D2AF50008E2CEC /* Inject */,
 			);
 			productName = Tomatoro;
 			productReference = A0B753B329B0E18100C50F6D /* Tomatoro.app */;
@@ -290,6 +304,7 @@
 			packageReferences = (
 				A0A3065629B5159900652262 /* XCRemoteSwiftPackageReference "Insomnia" */,
 				A0D57F5629C1CFBD00908EEE /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				A072B62029D2AF50008E2CEC /* XCRemoteSwiftPackageReference "Inject" */,
 			);
 			productRefGroup = A0B753B429B0E18100C50F6D /* Products */;
 			projectDirPath = "";
@@ -337,6 +352,7 @@
 			files = (
 				A0D57F2B29C0AD0A00908EEE /* Constants.swift in Sources */,
 				A0B753B929B0E18100C50F6D /* PomodoroView.swift in Sources */,
+				A072B62529D2B26D008E2CEC /* Inject.swift in Sources */,
 				A0D57F2929C0ACCA00908EEE /* ClockView.swift in Sources */,
 				A0B753B729B0E18100C50F6D /* TomatoroApp.swift in Sources */,
 				A0D57F5E29C1D06F00908EEE /* LottieView.swift in Sources */,
@@ -514,6 +530,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.verticalcoding.Tomatoro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -562,6 +583,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.verticalcoding.TomatoroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -603,6 +629,11 @@
 				DEVELOPMENT_TEAM = 7KN966P9LP;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.verticalcoding.TomatoroUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -671,6 +702,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A072B62029D2AF50008E2CEC /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		A0A3065629B5159900652262 /* XCRemoteSwiftPackageReference "Insomnia" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ochococo/Insomnia";
@@ -690,6 +729,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A072B62129D2AF50008E2CEC /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A072B62029D2AF50008E2CEC /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
 		A0A3065729B5159900652262 /* Insomnia */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A0A3065629B5159900652262 /* XCRemoteSwiftPackageReference "Insomnia" */;
